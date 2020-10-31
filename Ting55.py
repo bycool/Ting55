@@ -63,5 +63,6 @@ for PageNumber in range(len(BookN)):
     if AudioName in AlreadyDown:
         print('目录已有该文件，跳过下载。')
         continue
-    IdmDownLoad(AudioUrl, AudioName+'.mp3')
-    time.sleep(10)
+    else:
+        IdmDownLoad(AudioUrl, AudioName+'.mp3')
+        time.sleep(6)
